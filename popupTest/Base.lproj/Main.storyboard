@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--Pra View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="PraViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zUJ-1q-F5Q"/>
+                        <viewControllerLayoutGuide type="bottom" id="Cha-Xg-BPb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" tag="5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="6.png" translatesAutoresizingMaskIntoConstraints="NO" id="gxN-OH-3m1">
+                                <rect key="frame" x="2" y="234" width="42" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="5.png" translatesAutoresizingMaskIntoConstraints="NO" id="XXd-n2-NkM">
+                                <rect key="frame" x="44" y="234" width="42" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3.png" translatesAutoresizingMaskIntoConstraints="NO" id="Q1x-Th-aYt">
+                                <rect key="frame" x="89" y="233" width="42" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="6" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1.png" translatesAutoresizingMaskIntoConstraints="NO" id="rFc-bH-zpN">
+                                <rect key="frame" x="133" y="233" width="42" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Dbw-cO-afR">
+                                <rect key="frame" x="180" y="233" width="42" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZUL-X0-27X">
+                                <rect key="frame" x="224" y="233" width="42" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="4.png" translatesAutoresizingMaskIntoConstraints="NO" id="0JV-F6-MvL">
+                                <rect key="frame" x="264" y="233" width="42" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GJU-a9-qws">
+                                <rect key="frame" x="128" y="180" width="52" height="45"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cpn-iW-CyS">
+                                        <rect key="frame" x="0.0" y="-2" width="52" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="popupImage" destination="cpn-iW-CyS" id="cj3-S0-bB2"/>
+                        <outlet property="popupView" destination="GJU-a9-qws" id="UBh-Ev-l32"/>
+                        <outletCollection property="smileyImages" destination="gxN-OH-3m1" id="c3G-HU-AHu"/>
+                        <outletCollection property="smileyImages" destination="XXd-n2-NkM" id="3Ev-sM-Yiw"/>
+                        <outletCollection property="smileyImages" destination="Q1x-Th-aYt" id="qzZ-70-wTv"/>
+                        <outletCollection property="smileyImages" destination="rFc-bH-zpN" id="jSy-Am-Q5A"/>
+                        <outletCollection property="smileyImages" destination="Dbw-cO-afR" id="bK8-3Y-Emp"/>
+                        <outletCollection property="smileyImages" destination="ZUL-X0-27X" id="7nZ-zn-6zP"/>
+                        <outletCollection property="smileyImages" destination="0JV-F6-MvL" id="Thq-4C-V70"/>
+                        <outletCollection property="smileyImages" destination="gxN-OH-3m1" id="UQf-pn-gr6"/>
+                        <outletCollection property="smileyImages" destination="XXd-n2-NkM" id="BI2-UG-R9x"/>
+                        <outletCollection property="smileyImages" destination="Q1x-Th-aYt" id="0pf-J4-F3E"/>
+                        <outletCollection property="smileyImages" destination="rFc-bH-zpN" id="c0x-pn-Qpu"/>
+                        <outletCollection property="smileyImages" destination="Dbw-cO-afR" id="ENc-jD-NbU"/>
+                        <outletCollection property="smileyImages" destination="ZUL-X0-27X" id="J1a-hr-DRQ"/>
+                        <outletCollection property="smileyImages" destination="0JV-F6-MvL" id="7JN-IE-FBT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="62" y="122"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1.png" width="66" height="66"/>
+        <image name="2.png" width="66" height="66"/>
+        <image name="3.png" width="66" height="66"/>
+        <image name="4.png" width="66" height="66"/>
+        <image name="5.png" width="66" height="66"/>
+        <image name="6.png" width="66" height="66"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
