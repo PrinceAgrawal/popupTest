@@ -35,7 +35,7 @@
         {
             [self.popupView setHidden:NO];
             [self.popupImage setImage:[sView image]];
-            CGPoint newCenter= CGPointMake(sView.center.x, sView.center.y-40);
+            CGPoint newCenter= CGPointMake(sView.center.x, sView.center.y-60);
             [self.popupView setCenter:newCenter];
         }
     }
@@ -51,7 +51,7 @@
         {
             [self.popupView setHidden:NO];
             [self.popupImage setImage:[sView image]];
-            CGPoint newCenter= CGPointMake(sView.center.x, sView.center.y-40);
+            CGPoint newCenter= CGPointMake(sView.center.x, sView.center.y-60);
             [self.popupView setCenter:newCenter];
         }
     }
