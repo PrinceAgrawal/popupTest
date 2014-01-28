@@ -57,5 +57,19 @@
     }
 }
 
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    CGPoint point = [[[event allTouches] anyObject] locationInView:self.view];
+    for (UIImageView *sView in self.smileyImages)
+    {
+        if (CGRectContainsPoint([sView frame], point))
+        {
+            self.selectedImage= sView.image;
+            [self.popupView setHidden:YES];
+            break;
+        }
+    }
+}
+
 
 @end

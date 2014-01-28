@@ -12,5 +12,6 @@
 @property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *smileyImages;
 @property (weak, nonatomic) IBOutlet UIView *popupView;
 @property (weak, nonatomic) IBOutlet UIImageView *popupImage;
+@property (strong,nonatomic) UIImage *selectedImage;
 
 @end
